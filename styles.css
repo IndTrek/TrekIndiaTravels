@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&family=Roboto&family=poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ............navbar........... */
+.navbar-brand img {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+.navbar {
+  background-color: whitesmoke;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.navbar-nav {
+  font-size: larger;
+  font-weight: 600;
+}
+.navbar-custom .navbar-nav .nav-link {
+  box-sizing: border-box;
+  color: black;
+  padding: 2px;
+}
+.navbar-custom .navbar-nav ul li {
+  margin: 40px;
+}
+.navbar-custom .navbar-nav ul {
+  margin-right: 100px;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: #ffc94a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.hero {
+  height: 100vh;
+  background-image: url(./pics/pexels-vincent-gerbouin-445991-1174732.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name-slogan {
+  color: white;
+  font-size: 10vw;
+  font-weight: 750;
+  -webkit-text-stroke: 3px black;
+}
+.intro {
+  height: 90vh;
+  box-sizing: border-box;
+}
+.intro p {
+  text-align: center;
+  background-color: #ffc94a;
+  border-radius: 10px;
+  color: black;
+  font-size: 4.2vh;
+  font-weight: 600;
+  animation: slogeft 4s linear;
+  transition: ease 0.3s;
+}
+.adventure a {
+  color: black;
+}
+.adventure:hover a {
+  color: white;
+}
+
+@keyframes slogeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 768px) {
+  .name-slogan {
+    color: white;
+    font-size: 10vw;
+    font-weight: 750;
+    -webkit-text-stroke: 0.5px black;
+  }
+  ul li ul.dropdown {
+    border-radius: 10px;
+    width: 40vh !important;
+    background-color: #ffc94a;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  .contact {
+    background-color: #fcbb23;
+    height: 85vh !important;
+  }
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  border-radius: 10px;
+  width: 25vh;
+  background-color: #ffc94a;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li:hover ul.dropdown {
+  display: inline-block;
+}
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+}
+.dropdown li a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.abtUs h1 {
+  font-weight: 600;
+  color: black;
+}
+.card img {
+  height: 35vh;
+}
+.visitbtn {
+  background-color: #ffc94a !important;
+  color: black !important;
+}
+
+.visitbtn:hover {
+  background-color: #ffc94a !important;
+  color: white !important;
+  transform: scale(1.1);
+}
+.special h1 {
+  font-weight: 600;
+  color: black;
+}
+.contact {
+  background-color: #fcbb23;
+  height: 32vh;
+}
+.contact h1 {
+  font-weight: 600;
+  color: black;
+}
+.contact .advnturetxt {
+  font-size: x-large;
+  font-weight: bold;
+}
+.contact ul li {
+  list-style: none;
+}
+.contact li a {
+  text-decoration: none;
+  color: black;
+}
+.contact .adventurebegin {
+  font-size: large;
+  font-weight: bold;
+}
+.social li:hover {
+  color: white;
+}
+
+/* .................places........... */
